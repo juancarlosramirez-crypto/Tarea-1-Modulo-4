@@ -1,0 +1,109 @@
+/* Reseteo básico para que todo se vea igual en todos los navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7f6; /* Gris muy claro */
+    color: #333;
+}
+
+/* Header */
+.header-principal {
+    background-color: #1a2a6c; /* Azul oscuro tech */
+    color: white;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.titulo-web {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.eslogan {
+    font-style: italic;
+    opacity: 0.8;
+}
+
+/* Navegación */
+.navegacion-principal {
+    background-color: #333;
+    position: sticky;
+    top: 0;
+}
+
+.lista-nav {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.enlace-nav {
+    display: block;
+    padding: 1rem 1.5rem;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.enlace-nav:hover {
+    background-color: #00d2ff; /* Azul brillante al pasar el mouse */
+    color: #1a2a6c;
+}
+
+/* Contenedor y Secciones */
+.contenedor-principal {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.seccion-info {
+    background: white;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.subtitulo {
+    color: #1a2a6c;
+    margin-bottom: 1rem;
+    border-left: 5px solid #00d2ff;
+    padding-left: 10px;
+}
+
+/* Grid/Flex de Lenguajes */
+.tarjetas-flex {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.tarjeta-lenguaje {
+    background: #eef2f3;
+    padding: 1.5rem;
+    flex: 1;
+    min-width: 250px;
+    border-radius: 5px;
+    border-bottom: 3px solid #1a2a6c;
+}
+
+/* Footer */
+.pie-pagina {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+}
+
+.copyright {
+    font-size: 0.9rem;
+}
