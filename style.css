@@ -2,7 +2,7 @@
 :root {
     --bg-dark: #0a0a0c;
     --card-bg: #141417;
-    --accent2: #50fa7b; 
+    --jc: #50fa7b; 
     --text-main: #e6e6e6;
     --border-color: #2d2d30;
 }
@@ -30,7 +30,7 @@ body {
 .logo {
     font-size: 2rem;
     font-weight: bold;
-    color: var(--accent2);
+    color: var(--jc);
 }
 
 .cursor {
@@ -62,7 +62,7 @@ body {
 }
 
 .nav-item:hover {
-    color: var(--accent2);
+    color: var(--jc);
 }
 
 
@@ -89,7 +89,7 @@ body {
 
 .tech-tag {
     font-size: 0.6rem;
-    background: var(--accent2);
+    background: var(--jc);
     color: var(--bg-dark);
     padding: 2px 8px;
     border-radius: 2px;
@@ -117,7 +117,7 @@ body {
     display: block;
     margin-bottom: 8px;
     font-size: 0.85rem;
-    color: var(--accent2);
+    color: var(--jc);
 }
 
 .input-pro {
@@ -125,19 +125,19 @@ body {
     background: #000;
     border: 1px solid var(--border-color);
     padding: 12px;
-    color: var(--accent2);
+    color: var(--jc);
     outline: none;
 }
 
 .input-pro:focus {
-    border-color: var(--accent2);
+    border-color: var(--jc);
 }
 
 .btn-submit {
     grid-column: span 2;
     background: transparent;
-    color: var(--accent2);
-    border: 1px solid var(--accent2);
+    color: var(--jc);
+    border: 1px solid var(--jc);
     padding: 15px;
     cursor: pointer;
     font-family: inherit;
@@ -146,11 +146,11 @@ body {
 }
 
 .btn-submit:hover {
-    background: var(--accent2);
+    background: var(--jc);
     color: var(--bg-dark);
 }
 
-/* Footer */
+
 .bottom-footer {
     text-align: center;
     padding: 40px;
@@ -158,4 +158,4 @@ body {
     opacity: 0.5;
 }
 
-.online { color: var(--accent2); }
+.online { color: var(--jc); }
