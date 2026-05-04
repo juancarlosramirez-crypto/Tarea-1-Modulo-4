@@ -7,52 +7,102 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="header-principal">
-        <div class="contenedor">
-            <h1 class="titulo-web">Mundo Code</h1>
-            <p class="eslogan">Domina el arte de hablar con las máquinas</p>
+ <header class="top-header">
+        <div class="logo">
+            <span class="cursor">&gt;</span> Sintaxis_<span>Pro</span>
         </div>
+        <p class="header-desc">Explorando el ADN del software moderno.</p>
     </header>
 
-    <nav class="navegacion-principal">
-        <ul class="lista-nav">
-            <li><a href="#inicio" class="enlace-nav">Inicio</a></li>
-            <li><a href="#populares" class="enlace-nav">Lenguajes</a></li>
-            <li><a href="#paradigmas" class="enlace-nav">Paradigmas</a></li>
-            <li><a href="#contacto" class="enlace-nav">Contacto</a></li>
+    <nav class="side-nav">
+        <ul class="nav-menu">
+            <li><a href="#inicio" class="nav-item">Terminal</a></li>
+            <li><a href="#populares" class="nav-item">Librería</a></li>
+            <li><a href="#contacto" class="nav-item">Input</a></li>
         </ul>
     </nav>
 
-    <main class="contenedor-principal">
-        <section id="inicio" class="seccion-info">
-            <h2 class="subtitulo">¿Qué es un Lenguaje de Programación?</h2>
-            <p class="texto-descripcion">
-                Es un lenguaje formal diseñado para realizar procesos que pueden ser llevados a cabo por máquinas como las computadoras. 
-                Se compone de un conjunto de reglas sintácticas y semánticas.
-            </p>
+    <main class="content-wrapper">
+        <section id="inicio" class="hero-section">
+            <h2 class="glitch-title">Compilando Ideas</h2>
+            <p>La programación no es solo escribir código, es resolver problemas de forma creativa. Cada lenguaje es una herramienta distinta para un artesano digital.</p>
         </section>
 
-        <section id="populares" class="seccion-lenguajes">
-            <h2 class="subtitulo">Los más usados en 2024</h2>
-            <div class="tarjetas-flex">
-                <article class="tarjeta-lenguaje">
-                    <h3>JavaScript</h3>
-                    <p>El motor de la web moderna.</p>
-                </article>
-                <article class="tarjeta-lenguaje">
-                    <h3>Python</h3>
-                    <p>Simple, potente y el favorito para IA.</p>
-                </article>
-                <article class="tarjeta-lenguaje">
-                    <h3>Rust</h3>
-                    <p>Enfocado en la seguridad y el rendimiento.</p>
-                </article>
+        <section id="populares" class="tech-grid">
+            <article class="tech-card">
+                <span class="tech-tag">Front-end</span>
+                <h3>JavaScript</h3>
+                <p style="text-align: justify;"></p>El lenguaje que da vida a la web.</p>
+                <br>
+                <p style="text-align: justify;">Definición: Es el único lenguaje de programación que se ejecuta de forma nativa en los navegadores. Es la pieza fundamental que permite crear interfaces dinámicas y mapas interactivos.
+                    Puntos Clave: 
+                    <br>        
+                    <br>Versatilidad: Con Node.js, ahora también puedes usarlo en el servidor (Back-end).
+                    <br>
+                    <br>Ecosistema: Posee la colección de librerías más grande del mundo (NPM).
+                    <br>
+                    <br>
+                    <br>Demanda: Es el lenguaje más buscado por las empresas tecnológicas hoy en día.
+                    <br>
+                    <br>Uso Ideal: Desarrollo web moderno, aplicaciones móviles híbridas y desarrollo de videojuegos para navegador..</p>
+            </article>
+            <article class="tech-card">
+                <span class="tech-tag">Data Science</span>
+                <h3>Python</h3>
+                <p>Legibilidad y potencia en un solo lugar.</p>
+                <p style="text-align: justify;">
+                <br>Puedes usar este texto para describir a JS en tu sección de "Lenguajes"
+                <br>
+                <br>Definición: Es el único lenguaje de programación que se ejecuta de forma nativa en los navegadores. Es la pieza fundamental que permite crear interfaces dinámicas y mapas interactivos.
+                <br>
+                <br>Puntos Clave:<br>
+                <br>Versatilidad: Con Node.js, ahora también puedes usarlo en el servidor (Back-end).<br>
+                <br>Ecosistema: Posee la colección de librerías más grande del mundo (NPM).<br>
+                <br>Demanda: Es el lenguaje más buscado por las empresas tecnológicas hoy en día.<br>
+                <br>Uso Ideal: Desarrollo web moderno, aplicaciones móviles híbridas y desarrollo de videojuegos para navegador.<br>
+                </p>
+            </article>
+        </section>
+
+        <section id="contacto" class="contact-area">
+            <div class="form-container">
+                <h2 class="sub-header">Registro de Desarrollador</h2>
+                <form id="formulario-contacto" class="form-grid">
+                    <div class="field">
+                        <label for="user">Nickname:</label>
+                        <input type="text" id="user" class="input-pro" placeholder="Ingresa tu user" required>
+                    </div>
+                    <div class="field">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" class="input-pro" placeholder="Ingresa tu E-mail" required>
+                    </div>
+                    <div class="field">
+                        <label for="stack">Menú Principal:</label>
+                        <select id="stack" class="input-pro" required>
+                            <option value="">Seleccionar...</option>
+                            <option value="web">Desarrollo Web</option>
+                            <option value="ai">Inteligencia Artificial</option>
+                            <option value="mobile">App Móviles</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label for="level">¿Qué tanto te gusta tu area? (1-10):</label>
+                        <input type="number" id="level" class="input-pro" min="1" max="100" required>
+                    </div>
+                    <div class="field full-width">
+                        <label for="bio">Propósito del Código:</label>
+                        <textarea id="bio" class="input-pro" rows="3" placeholder="¿Qué quieres construir?" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">git push formulario</button>
+                </form>
             </div>
         </section>
     </main>
 
-    <footer class="pie-pagina">
-        <p class="copyright">&copy; 2024 Mundo Code. Desarrollado por un futuro Senior.</p>
+    <footer class="bottom-footer">
+        <p>status: <span class="online">online</span> | 2026 Sintaxis Pro</p>
     </footer>
+
+    <script src="main.js"></script>
 </body>
 </html>
